@@ -7,11 +7,18 @@
     <title>Document</title>
 </head>
 <body>
+    <header>
+
+    </header>
+    
     {{-- main start --}}
     <div class="main">
         <p>user_home</p>
     </div>
     {{-- main end --}}
 
+    <footer>
+
+    </footer>
 </body>
 </html>
