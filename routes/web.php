@@ -26,3 +26,10 @@ Route::get('/', 'UserHomeController@index');
 
 //todoホーム
 Route::get('/content/index', 'ContentController@index');
+
+//todo新規作成
+Route::get('/content/new', 'ContentController@new');
+//バリデーション 一旦迂回、未チェックで保存する
+//Route::post('/content/check', 'ContentController@check');
+
+Route::post('/content/create', 'ContentController@create');

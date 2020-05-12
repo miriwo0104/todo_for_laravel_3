@@ -7,10 +7,10 @@
             <p>content index</p>
         </div>
         <div class="new_todo">
-            <input type="button" onclick="location.href=''" value="新規登録">
+            <input type="button" onclick="location.href='/content/new'" value="新規登録">
         </div>
         <div class="content">
-            
+
         </div>
     </div>
     {{-- main end --}}
