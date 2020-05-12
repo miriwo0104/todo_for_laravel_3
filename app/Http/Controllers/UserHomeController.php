@@ -8,7 +8,6 @@ class UserHomeController extends Controller
 {
     //
     public function index() {
-        var_dump('aaa');
-        exit;
+        return view('user_home.index');
     }
 }
