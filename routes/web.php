@@ -23,3 +23,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 //ユーザホーム
 Route::get('/', 'UserHomeController@index');
+
+//todoホーム
+Route::get('/content/index', 'ContentController@index');
