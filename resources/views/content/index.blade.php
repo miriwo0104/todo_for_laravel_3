@@ -10,7 +10,11 @@
             <input type="button" onclick="location.href='/content/new'" value="新規登録">
         </div>
         <div class="content">
-
+            @foreach ($user_todos as $user_todo)
+                <p>{{$user_todo['title']}}</p>
+                <br>
+                <p>{{$user_todo['memo']}}</p>
+            @endforeach
         </div>
     </div>
     {{-- main end --}}

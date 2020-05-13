@@ -10,7 +10,10 @@ class ContentController extends Controller
 {
     //
     public function index() {
-        return view('content.index');
+        $user_id = Auth::id();
+
+        $user_todos = TodoContent::whereUser_id($user_id)->get();
+        return view('content.index', ['user_todos' => $user_todos]);
     }
 
     public function new() {
